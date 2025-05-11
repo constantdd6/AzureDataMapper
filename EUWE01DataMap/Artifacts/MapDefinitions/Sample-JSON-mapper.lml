@@ -1,0 +1,13 @@
+$version: 1
+$input: JSON
+$output: JSON
+$sourceSchema: Employees_Input_Schema.json
+$targetSchema: Employee_Output_Schema.json
+root:
+  employees:
+    $for(/root/employees/*):
+      employeeId: id
+      fullName: concat(firstName, " ", lastName)
+      contact:
+        email: email
+      department: department

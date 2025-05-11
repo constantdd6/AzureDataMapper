@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "name": "EUWE01DataMap",
+      "path": "./EUWE01DataMap"
+    }
+  ],
+  "settings": {
+    "terminal.integrated.env.windows": {
+      "PATH": "C:\\Users\\DominadorConstantino\\.azurelogicapps\\dependencies\\DotNetSDK;${env:PATH}"
+    },
+    "omnisharp.dotNetCliPaths": [
+      "C:\\Users\\DominadorConstantino\\.azurelogicapps\\dependencies\\DotNetSDK"
+    ]
+  }
+}

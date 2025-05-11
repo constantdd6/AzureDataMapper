@@ -1,0 +1,17 @@
+$version: 1
+$input: XML
+$output: XML
+$sourceSchema: Employees_Input_Schema.xsd
+$targetSchema: Employee_Output_Schema.xsd
+$sourceNamespaces:
+  xs: http://www.w3.org/2001/XMLSchema
+$targetNamespaces:
+  xs: http://www.w3.org/2001/XMLSchema
+Employees:
+  $for(/Employees/Employee):
+    Employee:
+      EmployeeID: ID
+      FullName: concat(FirstName, LastName)
+      Contact:
+        Email: Email
+      Department: Department
